@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Dólar para Real</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <Header>
+    <img src="assets/logo.png" alt="Conversor">
+  </Header>
+
+  <main>
+    <section>
+      <span class="cur">US$</span>
+      <input id="usd" type="text">
+    </section>
+    <section>
+      <span class="cur">R$</span>
+      <input id="brl" type="text">
+    </section>
+  </main>
+
+  <footer>
+    Feito por Alexandre
+  </footer>
+
+  <!-- Cache-busting: adiciona um timestamp na URL do script.js para forçar o navegador
+       a sempre buscar a versão mais recente do arquivo, evitando que uma cópia antiga
+       fique presa no cache depois de uma edição -->
+  <script>
+    const script = document.createElement('script');
+    script.src = 'assets/script.js?v=' + Date.now();
+    document.body.appendChild(script);
+  </script>
+</body>
+
+</html>

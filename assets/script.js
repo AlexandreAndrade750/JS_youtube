@@ -99,7 +99,7 @@ brlInput.addEventListener("keyup", () => {
   
 })  
 
-usdInput.value = 1000.00;
+usdInput.value = "1000,00";
 convert("usd-to-brl");
 
 // Funções
